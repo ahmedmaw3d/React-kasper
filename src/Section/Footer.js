@@ -10,7 +10,7 @@ function Footer() {
         <img src={logo} alt="Logo" />
         <p>We Are Social</p>
         <div className="social-icons">
-          <i><FaFacebookF s /></i>
+          <i><FaFacebookF /></i>
           <i><BsTwitter /></i>
           <i><AiFillHome /></i>
           <i><BsLinkedin /></i>

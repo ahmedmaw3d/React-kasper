@@ -4,7 +4,7 @@ function Video() {
   return (
     <div>
       <div className="video">
-      <ReactPlayer url='https://www.youtube.com/watch?v=LXb3EKWsInQ' />
+      <ReactPlayer style={{width:"100%"}} url='https://www.youtube.com/watch?v=LXb3EKWsInQ' />
       </div>
     </div>)
 }

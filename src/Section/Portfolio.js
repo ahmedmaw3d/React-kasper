@@ -7,6 +7,17 @@ import shuffle6 from "../image/shuffle-06.jpg"
 import shuffle7 from "../image/shuffle-07.jpg"
 import shuffle8 from "../image/shuffle-08.jpg"
 function Portfolio() {
+  let Portfolio = [
+    { image: shuffle1, title: "Awesome Image", text: "Photography" },
+    { image: shuffle2, title: "Awesome Image", text: "Photography" },
+    { image: shuffle3, title: "Awesome Image", text: "Photography" },
+    { image: shuffle4, title: "Awesome Image", text: "Photography" },
+    { image: shuffle5, title: "Awesome Image", text: "Photography" },
+    { image: shuffle6, title: "Awesome Image", text: "Photography" },
+    { image: shuffle7, title: "Awesome Image", text: "Photography" },
+    { image: shuffle8, title: "Awesome Image", text: "Photography" },
+
+  ]
   return (<div>
     <div className="portfolio" id="portfolio">
       <div className="container">
@@ -26,62 +37,18 @@ function Portfolio() {
         </ul>
       </div>
       <div className="imgs-container">
-        <div className="box">
-          <img src={shuffle1} alt="" />
-          <div className="caption">
-            <h4>Awesome Image</h4>
-            <p>Photography</p>
-          </div>
-        </div>
-        <div className="box">
-        <img src={shuffle2} alt="" />
-          <div className="caption">
-            <h4>Awesome Image</h4>
-            <p>Photography</p>
-          </div>
-        </div>
-        <div className="box">
-        <img src={shuffle3} alt="" />
-          <div className="caption">
-            <h4>Awesome Image</h4>
-            <p>Photography</p>
-          </div>
-        </div>
-        <div className="box">
-        <img src={shuffle4} alt="" />
-          <div className="caption">
-            <h4>Awesome Image</h4>
-            <p>Photography</p>
-          </div>
-        </div>
-        <div className="box">
-        <img src={shuffle5} alt="" />
-          <div className="caption">
-            <h4>Awesome Image</h4>
-            <p>Photography</p>
-          </div>
-        </div>
-        <div className="box">
-        <img src={shuffle6} alt="" />
-          <div className="caption">
-            <h4>Awesome Image</h4>
-            <p>Photography</p>
-          </div>
-        </div>
-        <div className="box">
-        <img src={shuffle7} alt="" />
-          <div className="caption">
-            <h4>Awesome Image</h4>
-            <p>Photography</p>
-          </div>
-        </div>
-        <div className="box">
-        <img src={shuffle8} alt="" />
-          <div className="caption">
-            <h4>Awesome Image</h4>
-            <p>Photography</p>
-          </div>
-        </div>
+        {Portfolio.map(item => {
+          return (
+            <div className="box">
+              <img src={item.image} alt="" />
+              <div className="caption">
+                <h4>{item.title}</h4>
+                <p>{item.text}</p>
+              </div>
+            </div>
+          )
+        })}
+
       </div>
       <a href="#" className="more">More</a>
     </div>
