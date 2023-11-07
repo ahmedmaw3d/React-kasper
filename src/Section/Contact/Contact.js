@@ -1,5 +1,5 @@
-
-function Contact() {
+import "./contact.css"
+const Contact = () => {
     return (<div>
         <div className="contact">
             <div className="container">

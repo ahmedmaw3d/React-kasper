@@ -1,16 +1,16 @@
-import skill from "../image/skills-01.jpg";
-import skills from "../image/skills-02.jpg";
+import skills1 from "../../image/skills-01.jpg";
+import skills2 from "../../image/skills-02.jpg";
+import "./skills.css";
 
-
-function Skills() {
-  let skil = [
+const Skills = () => {
+  const skills = [
     {
-      image: skill,
+      image: skills1,
       desc: " Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt.",
       name: "John Doe, CEO"
     },
     {
-      image: skills,
+      image: skills2,
       desc: " Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt.",
       name: "John Doe, CEO"
     },
@@ -24,7 +24,7 @@ function Skills() {
             Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget
             tincidunt.
           </p>
-          {skil.map(item => {
+          {skills.map(item => {
             return (
               <>
                 <div className="content">

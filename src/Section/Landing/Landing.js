@@ -1,6 +1,6 @@
+import "./landing.css";
 
-
-function Landing() {
+const Landing = () => {
     return (
         <div>
             <div className="landing">

@@ -1,5 +1,6 @@
+import "./quote.css";
 
-function Quote() {
+const Quote = () => {
     return (<div>
         <div className="quote">
             <div className="container">

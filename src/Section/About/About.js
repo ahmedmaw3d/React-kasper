@@ -1,6 +1,6 @@
-import about from "../image/about.png";
-
-function About() {
+import about from "../../image/about.png";
+import "./about.css";
+const About = () => {
   return (<div>
     <div className="about">
       <div className="container">

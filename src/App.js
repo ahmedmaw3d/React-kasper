@@ -1,18 +1,18 @@
 import './app.css';
-import Header from './Section/Header';
-import Services from './Section/Services';
-import Design from './Section/Design';
-import Portfolio from './Section/Portfolio';
-import Video from './Section/Video';
-import About from "./Section/About";
-import Stats from "./Section/Stats";
-import Skills from './Section/Skills';
-import Quote from './Section/Quote';
-import Subscribe from './Section/Subscribe';
-import Pricing from './Section/Pricing';
-import Contact from './Section/Contact';
-import Footer from './Section/Footer';
-import Landing from './Section/Landing';
+import Header from './Section/Hesder/Header';
+import Services from './Section/Services/Services';
+import Design from './Section/Design/Design';
+import Portfolio from './Section/Portfolio/Portfolio';
+import Video from './Section/Video/Video';
+import About from "./Section/About/About";
+import Stats from "./Section/Stats/Stats";
+import Skills from './Section/Skills/Skills';
+import Quote from './Section/Quote/Quote';
+import Subscribe from './Section/Subscribe/Subscribe';
+import Pricing from './Section/Pricing/Pricing';
+import Contact from './Section/Contact/Contact';
+import Footer from './Section/Footer/Footer';
+import Landing from './Section/Landing/Landing';
 function App() {
   return (
     <div>

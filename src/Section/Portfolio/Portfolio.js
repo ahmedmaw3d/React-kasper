@@ -1,13 +1,16 @@
-import shuffle1 from "../image/shuffle-01.jpg"
-import shuffle2 from "../image/shuffle-02.jpg"
-import shuffle3 from "../image/shuffle-03.jpg"
-import shuffle4 from "../image/shuffle-04.jpg"
-import shuffle5 from "../image/shuffle-05.jpg"
-import shuffle6 from "../image/shuffle-06.jpg"
-import shuffle7 from "../image/shuffle-07.jpg"
-import shuffle8 from "../image/shuffle-08.jpg"
-function Portfolio() {
-  let Portfolio = [
+import shuffle1 from "../../image/shuffle-01.jpg";
+import shuffle2 from "../../image/shuffle-02.jpg";
+import shuffle3 from "../../image/shuffle-03.jpg";
+import shuffle4 from "../../image/shuffle-04.jpg";
+import shuffle5 from "../../image/shuffle-05.jpg";
+import shuffle6 from "../../image/shuffle-06.jpg";
+import shuffle7 from "../../image/shuffle-07.jpg";
+import shuffle8 from "../../image/shuffle-08.jpg";
+import "./portfolio.css";
+
+const Portfolio = () => {
+
+  const portfolio = [
     { image: shuffle1, title: "Awesome Image", text: "Photography" },
     { image: shuffle2, title: "Awesome Image", text: "Photography" },
     { image: shuffle3, title: "Awesome Image", text: "Photography" },
@@ -17,7 +20,7 @@ function Portfolio() {
     { image: shuffle7, title: "Awesome Image", text: "Photography" },
     { image: shuffle8, title: "Awesome Image", text: "Photography" },
 
-  ]
+  ];
   return (<div>
     <div className="portfolio" id="portfolio">
       <div className="container">
@@ -37,7 +40,7 @@ function Portfolio() {
         </ul>
       </div>
       <div className="imgs-container">
-        {Portfolio.map(item => {
+        {portfolio.map(item => {
           return (
             <div className="box">
               <img src={item.image} alt="" />

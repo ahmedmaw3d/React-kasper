@@ -1,8 +1,8 @@
-import logo from '../image/logo.png';
+import logo from '../../image/logo.png';
 import { BsSearch } from "react-icons/bs";
+import "./header.css";
 
-
-function Header() {
+const Header = () => {
     return (
         <div>
             <header>

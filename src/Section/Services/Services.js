@@ -2,9 +2,11 @@ import { FaDesktop } from "react-icons/fa6";
 import { FaCog } from "react-icons/fa";
 import { FaPencilRuler } from "react-icons/fa";
 import { FaCamera } from "react-icons/fa";
-function Services() {
+import "./services.css";
 
-  let Services = [
+const services = () => {
+
+  const services = [
     {
       image: <FaDesktop size={50} />,
       title: "Vorem amet intuitive",
@@ -39,7 +41,7 @@ function Services() {
             </p>
           </div>
           <div className="services-container">
-            {Services.map(item => {
+            {services.map(item => {
               return (
                 <div className="srv-box">
                   <i>{item.image}</i>
@@ -52,11 +54,10 @@ function Services() {
                 </div>
               )
             })}
-
           </div>
         </div>
       </div>
     </div>
   )
 }
-export default Services;
+export default services;

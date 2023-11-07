@@ -1,9 +1,11 @@
-import logo from "../image/logo.png";
+import logo from "../../image/logo.png";
 import { FaFacebookF } from "react-icons/fa";
 import { BsTwitter } from "react-icons/bs";
 import { AiFillHome } from "react-icons/ai";
 import { BsLinkedin } from "react-icons/bs";
-function Footer() {
+import "./footer.css";
+
+const Footer = () => {
   return (<div>
     <div className="footer">
       <div className="container">
